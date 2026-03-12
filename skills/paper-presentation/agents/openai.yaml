@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Presentation"
+  short_description: "Turn research PDFs into talk-ready PPTX"
+  default_prompt: "Use $paper-presentation to turn this research paper PDF into a Chinese PPTX that keeps every main figure and gives each figure 3 to 5 bullets."
