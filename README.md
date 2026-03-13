@@ -24,7 +24,6 @@ An open repository of reusable AI skills for immunology, bioinformatics, scienti
 │  ├─ nsfc-grant/
 │  ├─ paper-presentation/
 │  ├─ pub-grade-barchart/
-│  ├─ spatial-transcriptomics/
 │  ├─ squidpy-spatial-viz/
 │  ├─ teaching-infographic-expert/
 │  └─ tcr-bcr-analysis/
@@ -56,16 +55,9 @@ This repository documents and distributes the skills. The official usage pattern
 | `nsfc-grant` | NSFC proposal drafting / 国自然申请书写作 | Chinese writing workflow, Python helper | Structured proposal drafting and revision | [summary](docs/skills/nsfc-grant.md) |
 | `paper-presentation` | PDF-to-talk workflow / 论文报告与学习包 | Python, PPT/PDF tooling | Talk-ready decks and study packs from papers | [summary](docs/skills/paper-presentation.md) |
 | `pub-grade-barchart` | Publication-quality bar charts / 发表级柱状图 | R and Python | Fast bar-chart generation for figures and supplements | [summary](docs/skills/pub-grade-barchart.md) |
-| `spatial-transcriptomics` | End-to-end spatial analysis / 空间转录组单一工作流 | Python, Scanpy, Squidpy, SpatialData | Loading, QC, domains, stats, visualization, communication, deconvolution | [summary](docs/skills/spatial-transcriptomics.md) |
 | `squidpy-spatial-viz` | Spatial plotting with Squidpy / Squidpy 可视化 | Python, Squidpy | Spatial scatter, overlays, feature maps | [summary](docs/skills/squidpy-spatial-viz.md) |
 | `teaching-infographic-expert` | Textbook-to-infographic planning / 教学信息图策划 | English blueprinting, image generation workflow | Turning dense textbook content into visual teaching assets | [summary](docs/skills/teaching-infographic-expert.md) |
 | `tcr-bcr-analysis` | Immune repertoire analysis / TCR/BCR 克隆型分析 | Python, scirpy, AnnData | Clonotypes, diversity, overlap, scRNA integration | [summary](docs/skills/tcr-bcr-analysis.md) |
-
-## Spatial Transcriptomics Note / 空间转录组说明
-
-`spatial-transcriptomics` is now published as a single top-level skill instead of a nested skill tree. It still covers the common spatial workflow, but the repository no longer carries the older 11 sub-skills underneath it.
-
-`spatial-transcriptomics` 现在以单一顶层 skill 的形式发布，不再保留之前那 11 个嵌套子 skill；常见空间分析流程仍然保留在这个单一 skill 的说明中。
 
 ## Scope Notes / 范围说明
 

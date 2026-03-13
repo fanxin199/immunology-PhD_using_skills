@@ -16,7 +16,7 @@
 
 - Publication-ready spatial figures
 - Tissue overlays and feature maps
-- A lightweight visualization companion to the broader `spatial-transcriptomics` workflow
+- A lightweight visualization skill for spatial transcriptomics projects
 
 ## Notes / 说明
 
