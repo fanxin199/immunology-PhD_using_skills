@@ -2,25 +2,19 @@
 
 ## Overview
 
-Analyze spatial transcriptomics data from Visium, Xenium, MERFISH, and other platforms using Squidpy and SpatialData.
+Analyze spatial transcriptomics data from Visium, Xenium, MERFISH, Slide-seq, Stereo-seq, and related platforms using one guided workflow.
 
 **Tool type:** python | **Primary tools:** Squidpy, SpatialData, Scanpy, scimap
 
-## Skills
+## Covers
 
-| Skill | Description |
-|-------|-------------|
-| spatial-data-io | Load spatial data from Visium, Xenium, Slide-seq, MERFISH |
-| spatial-preprocessing | QC, normalization, and feature selection for spatial data |
-| spatial-neighbors | Build spatial neighbor graphs and compute connectivity |
-| spatial-statistics | Moran's I, spatial autocorrelation, co-occurrence, enrichment |
-| spatial-domains | Identify spatial domains and tissue regions |
-| image-analysis | Process and analyze tissue images with Squidpy |
-| spatial-visualization | Static and interactive visualization of spatial data |
-| spatial-communication | Ligand-receptor analysis and cell-cell interactions |
-| spatial-deconvolution | Estimate cell type composition per spot |
-| spatial-multiomics | Analyze high-resolution platforms (Slide-seq, Stereo-seq, Visium HD) |
-| spatial-proteomics | Analyze CODEX, IMC, MIBI spatial proteomics data |
+- Data loading and platform-aware setup
+- QC, normalization, and feature selection
+- Spatial neighbor graphs and connectivity
+- Spatial autocorrelation, co-occurrence, and enrichment
+- Spatial domains and tissue-region analysis
+- Publication-ready visualization
+- Optional communication and deconvolution analyses
 
 ## Example Prompts
 
@@ -31,18 +25,11 @@ Analyze spatial transcriptomics data from Visium, Xenium, MERFISH, and other pla
 - "Build a spatial neighbor graph with 6 neighbors"
 - "Calculate Moran's I for this gene"
 - "Find spatially variable genes"
-- "Run co-occurrence analysis"
 - "Identify spatial domains in my tissue"
-- "Segment cells from the H&E image"
 - "Plot gene expression on the tissue"
 - "Show clusters overlaid on the image"
 - "Run ligand-receptor analysis"
 - "Deconvolve my Visium data with cell2location"
-- "Analyze my Slide-seq data"
-- "Process Stereo-seq at bin level"
-- "Work with Visium HD subcellular resolution"
-- "Analyze my CODEX spatial proteomics data"
-- "Find spatial interactions between cell types in IMC data"
 
 ## Requirements
 
@@ -52,6 +39,6 @@ pip install squidpy spatialdata spatialdata-io scanpy anndata scimap
 
 ## Related Skills
 
-- **single-cell** - Non-spatial scRNA-seq analysis
-- **differential-expression** - DE between spatial regions
-- **data-visualization** - Visualization of spatial patterns
+- **squidpy-spatial-viz** - publication-grade spatial figures
+- **single-cell** - non-spatial scRNA-seq analysis
+- **data-visualization** - visualization polish and layout

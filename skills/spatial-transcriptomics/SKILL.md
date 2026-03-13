@@ -1,44 +1,39 @@
 ---
 name: spatial-transcriptomics
-description: End-to-end spatial transcriptomics workflow hub (Visium/Xenium/MERFISH/Slide-seq/etc.) using Squidpy/SpatialData/Scanpy. Covers loading, QC/normalization, spatial graphs, spatial statistics, domains, visualization, cell-cell communication, and deconvolution.
+description: End-to-end spatial transcriptomics analysis skill for Visium/Xenium/MERFISH/Slide-seq and related platforms using Squidpy, SpatialData, and Scanpy. Use for loading data, QC and normalization, spatial neighbor graphs, spatial statistics, domains, visualization, communication analysis, and deconvolution within one guided workflow.
 ---
 
-# Spatial Transcriptomics (Workflow Hub)
+# Spatial Transcriptomics
 
-This skill is an umbrella entrypoint for spatial transcriptomics analysis and reporting.
+This skill is a single entrypoint for spatial transcriptomics analysis and reporting.
 
-It pairs well with:
-- `scvi-tools` (probabilistic models / integration)
-- `squidpy-spatial-viz` (publication-grade spatial figures)
-- `scientific-visualization` (export/layout conventions)
+It is designed for users who want one guided workflow covering the common stages of spatial analysis without switching between multiple nested skills.
 
-## Included Modules
+## Best For
 
-This folder bundles focused submodules (each has its own `SKILL.md` and examples):
+- Loading Visium, Xenium, MERFISH, Slide-seq, Stereo-seq, and related spatial outputs
+- QC, filtering, normalization, and feature selection
+- Spatial neighbor graphs, autocorrelation, co-occurrence, and enrichment
+- Spatial domains, tissue regions, and publication-ready visualization
+- Optional communication and deconvolution follow-up analyses
 
-| Module folder | Focus |
-|---|---|
-| `spatial-data-io/` | Load Visium/Xenium/MERFISH/Slide-seq outputs and coordinates |
-| `spatial-preprocessing/` | QC, filtering, normalization, feature selection |
-| `spatial-neighbors/` | Build spatial neighbor graphs (kNN/radius/Delaunay) |
-| `spatial-statistics/` | Moran's I / autocorrelation / co-occurrence / enrichment |
-| `spatial-domains/` | Spatial domains / tissue regions |
-| `spatial-visualization/` | Spatial scatter, tissue overlay, feature maps |
-| `image-analysis/` | Tissue image processing and feature extraction |
-| `spatial-communication/` | Ligand-receptor / spatial communication (Squidpy) |
-| `spatial-deconvolution/` | Reference-based deconvolution (cell2location/RCTD/etc.) |
-| `spatial-multiomics/` | High-resolution platforms (Visium HD / Stereo-seq / Slide-seq) |
-| `spatial-proteomics/` | Spatial proteomics (CODEX/IMC/MIBI) |
+## Typical Workflow
 
-## Quick Start (Typical Visium Flow)
+1. Load the spatial dataset and confirm platform-specific inputs.
+2. Run QC, filtering, and normalization.
+3. Build spatial neighbor graphs.
+4. Run spatial statistics and/or domain discovery as needed.
+5. Generate publication-ready figures.
+6. Add optional communication or deconvolution analysis if the project requires it.
 
-1) Load data (Space Ranger output)
-2) QC + normalization
-3) Spatial neighbors graph
-4) Spatial stats (optional) and/or domains (optional)
-5) Publication figures (overlay + feature maps)
+## Ask The User For
 
-When you ask for spatial analysis, include:
-- platform (Visium/Xenium/MERFISH/etc.)
-- inputs you have (counts, positions, images, h5ad)
-- your goal (QC, domains, deconvolution, spatial DE, communication)
+- Platform (Visium, Xenium, MERFISH, Slide-seq, Stereo-seq, CODEX, IMC, etc.)
+- Available inputs (counts, coordinates, tissue image, h5ad, metadata)
+- Main goal (QC, domains, visualization, communication, deconvolution, spatial DE)
+
+## Related Skills
+
+- `squidpy-spatial-viz` for spatial figure polishing
+- `scvi-tools` when probabilistic modeling or integration is needed
+- `scientific-visualization` when export or figure layout conventions matter
